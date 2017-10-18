@@ -1,0 +1,5 @@
+Tendo a situação exercício anterior e usando levando em conta que foi usada uma instância da classe
+ArrayStack, o valor final da variável de instância 't' seria 14.
+
+inicial: t = -1
+final: size() = 15

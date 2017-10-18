@@ -1,0 +1,12 @@
+Q: Draw a representation, akin to Example 7.1, of an initially empty list L after per-
+forming the following sequence of operations: add(0, 4), add(0, 3), add(0, 2),
+add(2, 1), add(1, 5), add(1, 6), add(3, 7), add(0, 8).
+
+add(0, 4)   -  (4) 
+add(0, 3)   -  (3, 4)
+add(0, 2)   -  (2, 3, 4)
+add(2, 1)   -  (2, 3, 1, 4)
+add(1, 5)   -  (2, 5, 3, 1, 4)
+add(1, 6)   -  (2, 6, 5, 3, 1, 4)
+add(3, 7)   -  (2, 6, 5, 7, 3, 1, 4)
+add(0, 8)   -  (8, 2, 6, 5, 7, 3, 1, 4)

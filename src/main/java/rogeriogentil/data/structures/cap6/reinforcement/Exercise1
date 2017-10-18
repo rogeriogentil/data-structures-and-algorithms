@@ -1,0 +1,6 @@
+Se foram realizadas 25 chamadas para o método push(e) - adiciona um elemento a pilha,
+12 chamadas para top() - obtém o elemento apenas sem removê-lo,
+10 chamadas para pop() - obtém o elemento no topo da pilha e remove-o - 
+sendo que 3 chamadas para pop() retornaram 'null' - indicando que a pilha estava vazia, 
+logo é provável que essas 3 chamadas que retornaram 'null' foram realizadas antes das 
+chamadas para o método 'push(e)', o leva a crer que o tamanho atual da pilha é 15 (25 - 10).
