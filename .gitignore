@@ -20,3 +20,20 @@
 
 # virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
 hs_err_pid*
+
+# Maven compiled files folder
+target/
+
+# Netbeans IDE folders and files
+nb-configuration.xml
+nbactions.xml
+nbproject/private
+
+# Eclipse IDE files and folders
+.classpath
+.project
+.settings/
+
+# IntelliJ IDEA files and folders
+.idea/
+*.iml
