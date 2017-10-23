@@ -1,0 +1,35 @@
+R-8.1 The following questions refer to the tree of Figure 8.3.
+a. Which node is the root?
+   /user/rt/courses/
+
+b. What are the internal nodes?
+   /user/rt/courses/
+      cs016/
+         homeworks/
+         programs/
+      cs252/
+         projects/
+            papers/
+            demos/
+
+c. How many descendants does node cs016/ have?
+   Does have 9 descendants
+
+d. How many ancestors does node cs016/ have?
+   Just one ancestor: "/user/rt/courses/"
+
+e. What are the siblings of node homeworks/?
+   "grades" and "programs/"
+
+f. Which nodes are in the subtree rooted at node projects/?
+   papers/
+      buylow
+      sellhigh
+      market
+   demos/
+
+g. What is the depth of node papers/?
+   The depth is 3
+
+h. What is the height of the tree?
+   The height is 4
