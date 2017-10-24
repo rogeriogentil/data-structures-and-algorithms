@@ -6,16 +6,15 @@ import rogeriogentil.data.structures.cap7.ArrayList;
  *
  * @author Rogerio J. Gentil
  */
-public class Exercise2 {
+public class Exercise02 {
 }
 
 /**
- * Give an implementation of the stack ADT using an array list for storage.
+ * R-7.2 Give an implementation of the stack ADT using an array list for storage.
  */
 class StackArrayList<E> {
 
    private static final int CAPACITY = 16;
-   private int size = 0;
    private ArrayList<E> data;
 
    public StackArrayList(final int capacity) {
@@ -39,10 +38,10 @@ class StackArrayList<E> {
    }
 
    public boolean isEmpty() {
-      return this.size == 0;
+      return this.data.size() == 0;
    }
 
    public int size() {
-      return this.size;
+      return this.data.size();
    }
 }
