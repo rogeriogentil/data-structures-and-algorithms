@@ -2,6 +2,7 @@
 package rogeriogentil.data.structures.cap5;
 
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 
 /**
@@ -10,6 +11,7 @@ import org.junit.Test;
  */
 public class RecursionFibonacciTest {
 
+   @Ignore
    @Test
    public void deveRetornarQuartoNumeroDeFibonacci() {
       long n = RecursionFibonacci.get(6);

@@ -1,6 +1,7 @@
 package rogeriogentil.data.structures.cap5;
 
 import org.junit.Assert;
+import org.junit.Ignore;
 import org.junit.Test;
 
 /**
@@ -19,6 +20,7 @@ public class RecursionBinarySearchTest {
       Assert.assertEquals(2, index);
    }
    
+   @Ignore
    @Test
    public void deveEncontrarNumeroADireta() {
       int[] array = {0, 10, 20, 30, 40, 50, 60, 70, 80, 90};
@@ -29,6 +31,7 @@ public class RecursionBinarySearchTest {
       Assert.assertEquals(4, index);
    }
    
+   @Ignore
    @Test
    public void deveEncontrarNumeroAEsquerda() {
       int[] array = {0, 10, 20, 30, 40, 50, 60, 70, 80, 90, 100};
