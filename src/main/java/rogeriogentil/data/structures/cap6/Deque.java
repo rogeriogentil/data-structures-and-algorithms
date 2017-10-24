@@ -3,6 +3,7 @@ package rogeriogentil.data.structures.cap6;
 /**
  *
  * @author Rogerio J. Gentil
+ * @param <E>
  */
 public interface Deque<E> {
 
@@ -14,9 +15,9 @@ public interface Deque<E> {
    
    /**
     * Inserts an element at the back of the deque.
-    * @param Element 
+    * @param element 
     */
-   void addLast(E Element);
+   void addLast(E element);
    
    /**
     * Removes and returns the first element of the deque (null if empty).
