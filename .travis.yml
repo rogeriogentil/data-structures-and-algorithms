@@ -1,0 +1,4 @@
+language: java
+notifications:
+  email:
+    - rogerio_gentil@yahoo.com.br
