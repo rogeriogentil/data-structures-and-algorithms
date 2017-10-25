@@ -87,4 +87,19 @@ public class ArrayList<E> implements List<E> {
         }
         data = temp; // sustitui a referência do array
     }
+    
+    // ----- Method added on resolution of the exercise R-7.5
+    public void trimToSize() {
+        E[] temp = (E[]) new Object[this.size()];
+        
+        for (int i = 0; i < this.size(); i++) {
+            temp[i] = this.data[i];
+        }
+        
+        // Alternative to 'for' 
+//        System.arraycopy(this.data, 0, temp, 0, this.size());
+                
+        this.data = temp;
+        temp = null;            // GC helper
+    }
 }
