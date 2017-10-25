@@ -1,7 +1,6 @@
 package rogeriogentil.data.structures.cap8;
 
 import java.util.Iterator;
-import java.util.NoSuchElementException;
 import rogeriogentil.data.structures.cap7.Position;
 
 /**
