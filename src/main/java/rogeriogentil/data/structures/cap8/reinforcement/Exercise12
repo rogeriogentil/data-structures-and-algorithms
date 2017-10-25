@@ -1,0 +1,15 @@
+R-8.12 Draw the binary tree representation of the following arithmetic expression:
+"(((5 + 2) ∗ (2 − 1))/((2 + 9) + ((7 − 2) − 1)) ∗ 8)"
+
+Answer:
+                            /
+
+            *                               +           
+
+    +               -               +              *
+
+5       2       2       1       2       9       8       -
+
+                                                    1       -
+
+                                                        7       2
