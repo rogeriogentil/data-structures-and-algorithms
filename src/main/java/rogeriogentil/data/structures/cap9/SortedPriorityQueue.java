@@ -3,11 +3,12 @@ package rogeriogentil.data.structures.cap9;
 import java.util.Comparator;
 import rogeriogentil.data.structures.cap7.LinkedPositionalList;
 import rogeriogentil.data.structures.cap7.Position;
-import rogeriogentil.data.structures.cap7.PositionalList;
 
 /**
  *
  * @author Rogerio J. Gentil
+ * @param <K> key
+ * @param <V> value
  */
 public class SortedPriorityQueue<K, V> extends AbstractPriorityQueue<K, V> {
 
