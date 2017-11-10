@@ -4,6 +4,8 @@ package rogeriogentil.data.structures.cap9;
  * Interface for a key-value pair
  *
  * @author Rogerio J. Gentil
+ * @param <K> key
+ * @param <V> value
  */
 public interface Entry<K, V> {
 
