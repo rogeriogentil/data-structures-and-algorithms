@@ -1,0 +1,24 @@
+R-9.3 What does each removeMin call return within the following sequence of priority
+queue ADT operations: insert(5, A), insert(4, B), insert(7, F), insert(1, D),
+removeMin( ), insert(3, J), insert(6, L), removeMin( ),
+removeMin( ), insert(8, G), removeMin( ), insert(2, H), removeMin( ),
+removeMin( )?
+
+Answer:
+------
+
+Operation       Returned    Priority Queue Contents
+insert(5, A)                { (5,A) }
+insert(4, B)                { (4,B), (5,A) }
+insert(7, F)                { (4,B), (5,A), (7,F) }
+insert(1, D)                { (1,D), (4,B), (5,A), (7,F) }   
+removeMin( )    (1,D)       { (4,B), (5,A), (7,F) }
+insert(3, J)                { (3,J), (4,B), (5,A), (7,F) }
+insert(6, L)                { (3,J), (4,B), (5,A), (6,L), (7,F) }
+removeMin( )    (3,J)       { (4,B), (5,A), (6,L), (7,F) }
+removeMin( )    (4,B)       { (5,A), (6,L), (7,F) }
+insert(8, G)                { (5,A), (6,L), (7,F), (8,G) }
+removeMin( )    (5,A)       { (6,L), (7,F), (8,G) }
+insert(2, H)                { (2,H), (6,L), (7,F), (8,G) }
+removeMin( )    (2,H)       { (6,L), (7,F), (8,G) }
+removeMin( )    (6,L)       { (7,F), (8,G) }
