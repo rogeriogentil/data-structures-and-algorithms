@@ -52,7 +52,7 @@ public abstract class AbstractPriorityQueue<K, V> implements PriorityQueue<K, V>
    }
 
    //---------------- nested PQEntry class ---------------
-   protected class PQEntry<K, V> implements Entry<K, V> {
+   protected static class PQEntry<K, V> implements Entry<K, V> {
 
       private K key;
       private V value;
