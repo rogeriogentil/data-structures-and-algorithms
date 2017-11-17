@@ -1,0 +1,9 @@
+R-8.7 What are the minimum and maximum number of internal and external nodes in
+an improper binary tree with n nodes?
+
+Answer: 
+- Minimum internal nodes: 1 node
+- Minimum external nodes: 1 node
+- Maximum internal nodes: 
+- Maximum external nodes:
+
