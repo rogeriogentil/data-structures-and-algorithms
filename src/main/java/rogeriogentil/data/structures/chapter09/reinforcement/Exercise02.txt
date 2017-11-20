@@ -1,0 +1,20 @@
+R-9.2 Suppose you set the key for each position p of a binary tree T equal to 
+its preorder rank. Under what circumstances is T a heap?
+
+Answer
+------
+T is a heap when any parent position is lesser or equal the value position 
+and it is a complete binary tree.
+
+Example 1 (proper and complete binary tree):
+
+            1
+    2               5
+3       4       6       7
+
+
+Example 2 (proper and complete binary tree yet):
+
+            1
+    2               4
+3       5
