@@ -1,0 +1,18 @@
+R-8.20 Let T be an ordered tree with more than one node. Is it possible that the 
+preorder traversal of T visits the nodes in the same order as the postorder 
+traversal of T? If so, give an example; otherwise, explain why this cannot occur. 
+Likewise, is it possible that the preorder traversal of T visits the nodes in the 
+reverse order of the postorder traversal of T? If so, give an example; otherwise, 
+explain why this cannot occur.
+
+Answers
+-------
+"Is it possible that the preorder traversal of T visits the nodes in the same 
+order as the postorder traversal of T?"
+A: No. Because, given a tree with two nodes, for instance, in the preorder the
+first node visited is the root whereas in the postorder the first node visited 
+is a child.
+
+"is it possible that the preorder traversal of T visits the nodes in the reverse 
+order of the postorder traversal of T?"
+A: Yes, but only when a tree has two nodes.
