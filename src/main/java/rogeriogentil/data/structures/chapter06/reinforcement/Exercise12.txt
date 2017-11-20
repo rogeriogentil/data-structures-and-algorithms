@@ -1,0 +1,25 @@
+R-6.12 What values are returned during the following sequence of deque ADT operations, on an initially empty deque? 
+addFirst(3), addLast(8), addLast(9), addFirst(1), last( ), isEmpty( ), addFirst(2), removeLast( ), addLast(7), 
+first( ), last( ), addLast(4), size( ), removeFirst( ), removeFirst( ).
+
+Answer
+------
+
+Operation         Returned value    Content of the deque
+-----------       --------------    --------------------
+addFirst(3)       -                 (3)
+addLast(8)        -                 (3, 8)
+addLast(9)        -                 (3, 8, 9)
+addFirst(1)       -                 (1, 3, 8, 9)
+last()            9                 (1, 3, 8, 9)
+isEmpty()         false             (1, 3, 8, 9)
+addFirst(2)       -                 (2, 1, 3, 8, 9)
+removeLast()      9                 (2, 1, 3, 8)
+addLast(7)        -                 (2, 1, 3, 8, 7)
+first()           2                 (2, 1, 3, 8, 7)
+last()            7                 (2, 1, 3, 8, 7)
+addLast(4)        -                 (2, 1, 3, 8, 7, 4)
+size()            6                 (2, 1, 3, 8, 7, 4)
+removeFirst()     2                 (1, 3, 8, 7, 4)
+removeFirst()     1                 (3, 8, 7, 4)
+
