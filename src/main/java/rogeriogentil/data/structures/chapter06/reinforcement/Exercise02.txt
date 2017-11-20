@@ -1,3 +1,9 @@
+R-6.2 Had the stack of the previous problem been an instance of the ArrayStack class, from Code Fragment 6.2, what 
+would be the final value of the instance variable t?
+
+Answer (pt-BR)
+--------------
+
 Tendo a situação exercício anterior e usando levando em conta que foi usada uma instância da classe
 ArrayStack, o valor final da variável de instância 't' seria 14.
 
