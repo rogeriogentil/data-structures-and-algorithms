@@ -1,0 +1,7 @@
+R-6.7 Suppose an initially empty queue Q has performed a total of 32 enqueue operations, 10 first operations, 
+and 15 dequeue operations, 5 of which returned null to indicate an empty queue. What is the current size of Q?
+
+Answer
+------
+If 5 dequeue operations returned null, so only 10 dequeue operations remove some element of the queue. Thus, 
+the current size of Q is 22.
