@@ -1,3 +1,5 @@
+package rogeriogentil.data.structures.chapter06.reinforcement;
+
 
 import static org.hamcrest.CoreMatchers.*;
 import static org.junit.Assert.*;
