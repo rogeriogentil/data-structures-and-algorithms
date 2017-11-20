@@ -27,7 +27,7 @@ target/
 # Netbeans IDE folders and files
 nb-configuration.xml
 nbactions.xml
-nbproject/private
+nbproject/
 
 # Eclipse IDE files and folders
 .classpath
