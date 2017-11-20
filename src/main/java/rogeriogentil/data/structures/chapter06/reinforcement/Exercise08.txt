@@ -1,0 +1,17 @@
+R-6.8 Had the queue of the previous problem been an instance of the ArrayQueue class, from Code Fragment 6.10, with 
+capacity 30 never exceeded, what would be the final value of the instance variable f?
+
+Answer
+------
+
+The previous problem: R-6.7
+   - 32 enqueue operations, 
+   - 10 first operations, and 
+   - 15 dequeue operations, 5 of which returned null to indicate an empty queue.
+
+Therefore, 
+   - the first operation don't change the variable f
+   - only 10 (15 - 5) operations dequeue has removed some element of the queue
+   
+The instance variable f that indicates the index of the front element was just changed when performed the dequeue 
+operation. Thus, the final value of the variable f is 10.
