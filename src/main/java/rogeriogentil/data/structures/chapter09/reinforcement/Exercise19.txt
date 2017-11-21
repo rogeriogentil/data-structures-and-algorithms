@@ -1,0 +1,12 @@
+R-9.19 Bill claims that a preorder traversal of a heap will list its keys in nondecreasing
+order. Draw an example of a heap that proves him wrong.
+
+Answer:
+------
+Example based on Figure 9.4:
+
+         4
+   5           6
+15    9     7     20
+
+Preorder traversal: 4, 5, 15, 9, 6, 7, 20
