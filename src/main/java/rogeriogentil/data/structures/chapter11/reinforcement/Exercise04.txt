@@ -1,0 +1,32 @@
+R-11.4 Dr. Amongus claims that the order in which a fixed set of entries is inserted 
+into a binary search tree does not matter—the same tree results every time. Give a
+small example that proves he is wrong.
+
+Answer:
+======
+Given a set of keys:
+{1, 2, 3}
+
+Given two insertion sequences:
+1st -> 1, 2, 3
+2nd -> 3, 2, 1
+
+The respective results are:
+
+1st
+---
+1
+ \
+  2
+   \
+    3
+
+2nd
+---
+    3
+   /
+  2
+ /
+1
+
+It is possible notice that both results are different.
