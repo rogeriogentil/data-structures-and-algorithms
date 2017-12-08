@@ -1,0 +1,66 @@
+R-11.2 Insert, into an empty binary search tree, entries with keys 30, 40, 24, 
+58, 48, 26, 11, 13 (in this order). Draw the tree after each insertion.
+
+1st Insertion -> 30
+=============
+30
+
+2nd Insertion -> 40
+=============
+30
+  \
+   40
+
+3rd Insertion -> 24
+=============
+   30
+  /  \
+24    40
+
+4th Insertion -> 58
+=============
+   30
+  /  \
+24    40
+        \
+        58
+
+5th Insertion -> 48
+=============
+   30
+  /  \
+24    40
+        \
+        58
+        /
+      48
+
+6th Insertion -> 26
+=============
+   30
+  /  \
+24    40
+  \     \
+  26    58
+        /
+      48
+
+7th Insertion -> 11
+=============
+     30
+    /  \
+  24    40
+ /  \     \
+11  26    58
+          /
+        48
+
+8th Insertion -> 13
+=============
+     30
+    /  \
+  24    40
+ /  \     \
+11  26    58
+  \       /
+  13     48
