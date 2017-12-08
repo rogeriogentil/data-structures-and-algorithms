@@ -1,0 +1,42 @@
+R-11.1 If we insert the entries (1, A), (2, B), (3, C), (4, D), and (5, E), in this order, 
+into an initially empty binary search tree, what will it look like?
+
+1st Insertion -> (1, A)
+============
+(1, A)
+
+2nd Insertion -> (2, B)
+============
+(1, A)
+    \
+    (2, B)
+
+3rd Insertion -> (3, C)
+============
+(1, A)
+    \
+    (2, B)
+        \
+        (3, C)
+
+4th Insertion -> (4, D)
+============
+(1, A)
+    \
+    (2, B)
+        \
+        (3, C)
+            \
+            (4, D)
+
+5th (and final) Insertion -> (5, E)
+=========================
+(1, A)
+    \
+    (2, B)
+        \
+        (3, C)
+            \
+            (4, D)
+                \
+                (5, E)
