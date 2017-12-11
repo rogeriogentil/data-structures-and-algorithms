@@ -1,0 +1,25 @@
+R-11.9 Draw the AVL tree resulting from the removal of the entry with key 62 
+from the AVL tree of Figure 11.13b.
+
+Answer:
+======
+Figure 11.13b:
+
+       62
+     /    \
+   44      78
+  /  \       \
+17    50      88
+     /  \
+   48    54
+
+
+Final result (delete node and replace with largest node in left tree):
+
+       54
+     /    \
+   44      78
+  /  \       \
+17    50      88
+     /
+   48
