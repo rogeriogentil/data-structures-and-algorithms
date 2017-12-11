@@ -1,0 +1,17 @@
+R-11.14 What does a splay tree look like if its entries are accessed in 
+increasing order by their keys?
+
+Answer:
+======
+
+Given a ordered access sequence in a Splay Tree, the result is a degenerate tree 
+in decreasing order.
+
+    K - N
+     /
+   ...
+   /
+ K - 1
+ /
+K
+
