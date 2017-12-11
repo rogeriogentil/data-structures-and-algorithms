@@ -1,0 +1,51 @@
+R-11.8 Draw the AVL tree resulting from the insertion of an entry with key 52 
+into the AVL tree of Figure 11.13b.
+
+Answer:
+======
+Figure 11.13b:
+
+       62
+     /    \
+   44      78
+  /  \       \
+17    50      88
+     /  \
+   48    54
+
+
+Insertion of the entry with key 52 (violation of the height-balance property: the 
+heights of the children > 1):
+
+       62
+     /    \
+   44      78
+  /  \       \
+17    50      88
+     /  \
+   48    54
+        /
+       52
+
+Trinode restructuring notation (a = z, b = y, c = x):
+
+       62
+   z /    \
+   44      78
+  /  \ y     \
+17    50      88
+     /  \ x
+   48    54 
+        /
+       52
+
+After Single Rotate Left (final result):
+
+         62
+     y /    \
+     50      78
+  z /  \ x     \
+  44    54      88
+ /  \   /
+17  48 52
+          
