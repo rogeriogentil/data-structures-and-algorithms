@@ -1,0 +1,17 @@
+R-11.17 Is the search tree of Figure 11.22(a) a (2, 4) tree? Why or why not?
+
+Answer:
+======
+               22
+            /     \
+         /           \
+      5   10            25
+     /  |  \            / \
+   /    |    \        /     \
+ 3 4   6 8    14   23 24     27
+             /  \
+           /      \ 
+        11 13     17
+
+Despite all internal nodes have at most four children, this search tree isn't 
+a (2, 4) tree because not all external nodes have the same depth.
