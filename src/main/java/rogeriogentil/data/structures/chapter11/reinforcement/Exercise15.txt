@@ -1,0 +1,500 @@
+R-11.15 Perform the following sequence of operations in an initially empty splay 
+tree and draw the tree after each set of operations.
+a. Insert keys 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, in this order.
+b. Search for keys 1, 3, 5, 7, 9, 11, 13, 15, 17, 19, in this order.
+c. Delete keys 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, in this order.
+
+
+Answer:
+======
+a. Insert keys 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, in this order.
+----------------------------------------------------------------
+0
+
+- 2nd insertion:
+0
+ \
+  2
+
+(Zig Left)
+  2
+ /
+0
+
+- 3rd insertion:
+  2
+ / \
+0   4
+
+(Zig Left)
+    4
+   / 
+  2
+ /
+0
+
+- After 4th insertion:
+      6
+     /
+    4
+   / 
+  2
+ /
+0
+
+- After 5th insertion:
+        8
+       /
+      6
+     /
+    4
+   / 
+  2
+ /
+0
+
+- After 6th insertion:
+          10
+         /
+        8
+       /
+      6
+     /
+    4
+   / 
+  2
+ /
+0
+
+...
+
+- After last insertion:
+                  18
+                 /
+                16
+               /
+              14
+             /
+            12
+           /
+          10
+         /
+        8
+       /
+      6
+     /
+    4
+   / 
+  2
+ /
+0
+
+
+
+
+b. Search for keys 1, 3, 5, 7, 9, 11, 13, 15, 17, 19, in this order.
+-------------------------------------------------------------------
+After 1st search:
+       0
+        \
+         18
+        /
+       14
+      /  \
+    10    16
+   /  \
+  6    12
+ / \
+2   8
+ \
+  4
+
+After 2nd search:
+     4
+   /   \
+ 0       18
+  \     /
+   2   10
+     /    \
+    6      14
+     \     / \
+      8   12 16
+
+After 3rd search:
+(Zig-zig Right)
+    4
+  /   \
+ 0     6
+  \     \
+   2    10
+       /  \
+      8    18
+           /
+          14
+         / \
+        12 16
+
+(Zig-left)
+    4
+  /   \
+ 0     6
+  \     \
+   2    10
+       /  \
+      8    18
+           /
+          14
+         / \
+        12 16
+
+    6
+   / \
+  4   10
+ /    / \
+0    8   18
+ \       /
+  2     14
+       / \
+      12 16
+
+After 4th search
+(Zig-Zag Left)
+      8
+     / \
+    6   10
+   /     \
+  4      18
+ /       /
+0       14
+ \     / \ 
+  2   12 16
+
+After 5th search:
+(Zig Left)
+         10
+        /  \
+       8    18
+      /     /
+     6     14
+    /      / \
+   4      12 16
+  /
+ 0      
+  \
+   2
+
+After 7th search:
+(Zig-Zig Right)
+         10
+        /  \
+       8    12
+      /      \
+     6       14
+    /          \
+   4           18
+  /            /
+ 0            16
+  \
+   2
+
+(Zig Left)
+           12
+          /  \
+         10   14
+        /      \
+       8        18
+      /        /
+     6       16
+    /
+   4
+  /
+ 0
+  \
+   2
+
+After 8th search:
+(Zig Left)
+             14
+            /  \
+           12   18
+          /     /
+         10    16
+        /
+       8
+      /
+     6
+    /
+   4
+  /
+ 0
+  \
+   2
+
+After 9th search:
+(Zig-zag Left)               
+               16
+              /   \
+             14   18
+            /
+           12
+          /
+         10
+        /
+       8
+      /
+     6
+    /
+   4
+  /
+ 0
+  \
+   2
+
+After 10th search:
+(Zig Left)
+                 18
+                /
+               16
+              /
+             14
+            /
+           12
+          /
+         10
+        /
+       8
+      /
+     6
+    /
+   4
+  /
+ 0
+  \
+   2
+
+After 11th search:
+                 18
+                /
+               16
+              /
+             14
+            /
+           12
+          /
+         10
+        /
+       8
+      /
+     6
+    /
+   4
+  /
+ 0
+  \
+   2
+
+
+
+
+
+c. Delete keys 0, 2, 4, 6, 8, 10, 12, 14, 16, 18, in this order.
+----------------------------------------------------------------
+1st deletion:
+(Zig-Zig Right)
+            18
+           /
+          16
+         /
+        14
+       /
+      12
+     /
+    10
+   /
+  8
+ /
+0
+ \
+  4 
+ / \  
+2   6
+
+(Zig-Zig Right)
+          18
+         /
+        16
+       /
+      14
+     /
+    12
+   /
+  0
+   \
+    8
+   / \
+  4   10
+ / \  
+2   6
+
+(Zig-Zig Right)
+         18
+        /
+      16
+     /
+    0
+     \
+      12
+     / \
+    8   14
+   / \
+  4   10
+ / \  
+2   6
+
+(Zig-Zig Right)
+      0
+       \
+        16
+       / \
+      12   18
+     / \
+    8   14
+   / \
+  4   10
+ / \  
+2   6
+
+(Remove root)
+        16
+       / \
+      12   18
+     / \
+    8   14
+   / \
+  4   10
+ / \  
+2   6
+
+- 2nd deletion
+(Zig-Zig Right)
+    16
+   / \
+  12   18
+ / \
+2   14
+ \
+  4
+   \
+    8
+   / \
+  6   10
+
+(Zig-Zig Right)
+   2  
+    \
+     12
+   /    \
+  4      16
+   \    /  \
+    8  14  18
+   / \
+  6   10
+
+(Remove root)
+     12
+   /    \
+  4      16
+   \    /  \
+    8  14  18
+   / \
+  6   10
+
+- 3rd deletion
+(Zig Right)
+     4
+      \
+       12
+     /    \
+    8      16
+   / \    /  \
+  6  10  14  18
+
+(Remove root)
+       12
+     /    \
+    8      16
+   / \    /  \
+  6  10  14  18
+
+- 4th deletion
+(Zig-Zig Right)
+6
+ \
+  8
+   \
+    12
+   / \
+  10  16
+     /  \
+    14  18
+
+(Remove root)
+  8
+   \
+    12
+   / \
+  10  16
+     /  \
+    14  18
+
+- 5th deletion
+(Remove root)
+    12
+   / \
+  10  16
+     /  \
+    14  18
+
+- 6th deletion
+(Zig Right)
+10
+ \
+  12
+   \
+    16
+   /  \
+  14  18
+
+(Remove root)
+  12
+   \
+    16
+   /  \
+  14  18
+
+- 7th deletion
+(Remove root)
+    16
+   /  \
+  14  18
+
+- 8th deletion
+(Zig Right)
+  14
+   \
+    16
+     \
+      18
+
+(Remove root)
+    16
+      \
+      18
+
+- 9th deletion
+(Remove root)
+      18
+
+- 9th deletion
+(Remove root)
+Empty tree
