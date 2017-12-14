@@ -1,0 +1,29 @@
+R-12.4 Is our array-based implementation of merge-sort given in Section 12.1.2 
+stable? Explain why or why not.
+
+Answer:
+======
+
+No, the array-based implementation of merge-sort given in Section 12.1.2 isn't 
+stable because when two key with same values are compared the condition result 
+0 (zero). So, the posterior element is first stored in S.
+
+// S2[j] is stored before S1[i] in S when they have same value
+if (j == S2.length || (i < S1.length && comp.compare(S1[i], S2[j]) < 0)) { 
+    S[i+j] = S1[i++];
+} else {
+    S[i+j] = S2[j++];
+}
+
+Example:
+-------
+Given:
+      i0  i1
+S1: | 6 | 7 |   (S1 last level before last merge)
+
+      j0  j1
+S2: | 3 | 6 |   (S2 last level before last merge)
+
+Merge results:
+     j0  j1  i0  i1
+S: | 3 | 6 | 6 | 7 |
