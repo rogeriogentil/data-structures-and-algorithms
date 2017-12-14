@@ -1,0 +1,16 @@
+R-12.5 Is our linked-list-based implementation of merge-sort (Code Fragment 12.3) 
+stable? Explain why or why not.
+
+Answer:
+======
+
+No, the linked-list-based implementation of merge-sort given in Code Fragment 
+12.3 isn't stable because the compartion of two keys with same values results 
+0 (zero). So, the posterior element is first stored in S.
+
+// S2.first() is queued before S1.first() in S when they have same value
+if (comp.compare(S1.first(), S2.first()) < 0) {
+    S.enqueue(S1.dequeue());
+} else {
+    S.enqueue(S2.dequeue());
+}
