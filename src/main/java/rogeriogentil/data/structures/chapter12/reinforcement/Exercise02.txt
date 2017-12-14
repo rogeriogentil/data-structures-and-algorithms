@@ -1,0 +1,10 @@
+R-12.2 In the merge-sort tree shown in Figures 12.2 through 12.4, some 
+edges are drawn as arrows. What is the meaning of a downward arrow? How 
+about an upward arrow?
+
+Answer:
+======
+
+The downward arrow meaning that the input data are being divided until a 
+lower fraction and the upward arrow indicates that the subsets are being 
+merged into a larger subsets until turn up a only ordered data set. 
