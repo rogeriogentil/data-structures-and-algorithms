@@ -1,0 +1,26 @@
+R-12.1 Give a complete justification of Proposition 12.1.
+
+Answer:
+======
+
+Proposition 12.1: The merge-sort tree associated with an execution of merge-sort 
+on a sequence of size n has height ⌈log n⌉ .
+
+As the merge-sort algorithm divide the input size into two halves to every call, 
+thereby:
+
+- in the case in which n is a power of 2
+1st call ->    n   = n/2^0
+2nd call ->    n/2 = n/2^1
+3rd call ->    n/4 = n/2^2
+4th call ->    n/8 = n/2^3
+               ...
+last call ->   n/n = n/2^i
+
+Consider 
+   n = 2^i <=> log n = i
+
+where i is the height of the merge-sort tree associated.
+
+- in the case in wich n is not a power of 2, the height approximates of log n.
+Therefore, the height will be bounded.
