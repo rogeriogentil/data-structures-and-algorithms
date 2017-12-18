@@ -1,0 +1,13 @@
+R-14.6 Suppose we represent a graph G having n vertices and m edges with the edge list
+structure. Why, in this case, does the insertVertex method run in O(1) time while
+the removeVertex method runs in O(m) time?
+
+Answer:
+======
+
+The insertVertex method runs in O(1) time because the vertex is added in the last 
+position of the list that store all vertex (all vertex objects are stored in an 
+unordered list).
+
+However, the removeVertex method runs in O(m) (m = edges) because to remove a 
+vertex is necessary to search all edges that are linked with this vertex.
