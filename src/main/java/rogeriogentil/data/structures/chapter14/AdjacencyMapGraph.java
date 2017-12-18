@@ -33,10 +33,10 @@ public class AdjacencyMapGraph<V, E> implements Graph<V, E> {
          */
         public InnerVertex(V element, boolean graphIsDirected) {
             this.element = element;
-            outgoing = new UnsortedTableMap<>();
+            outgoing = new UnsortedTableMap<>();        // TODO: change by ProbeHashMap - cap 10
 
             if (graphIsDirected) {
-                incoming = new UnsortedTableMap<>();
+                incoming = new UnsortedTableMap<>();    // TODO: change by ProbeHashMap - cap 10
             } else {
                 incoming = outgoing;        // if undirected, alias outgoing map
             }
