@@ -1,0 +1,28 @@
+R-14.7 Give pseudocode for performing the operation insertEdge(u, v, x) in O(1) time
+using the adjacency matrix representation.
+
+Answer:
+======
+
+The adjacency matrix, for instance:
+
+       0 1 2 3
+A -> 0
+B -> 1
+C -> 2
+D -> 3
+
+Pseudo-code:
+
+insertEdge(A, B, edge) 
+    matrix[A][B] = edge
+    matrix[B][A] = edge
+
+
+The adjacency matrix after insertion (e = edge):
+
+       0 1 2 3
+A -> 0   e
+B -> 1 e
+C -> 2
+D -> 3
