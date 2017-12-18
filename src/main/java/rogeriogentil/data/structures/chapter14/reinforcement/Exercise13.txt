@@ -1,0 +1,9 @@
+R-14.13 Explain why the DFS traversal runs in O(n 2 ) time on an n-vertex simple graph
+that is represented with the adjacency matrix structure.
+
+Answer:
+======
+
+As DFS is a discover algorithm, when is used an adjacency matrix structure, it 
+is necessary go through every vertices (columns) for each vertex (rows) to find 
+its adjacency vertices (non null elements).
