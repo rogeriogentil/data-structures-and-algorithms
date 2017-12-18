@@ -1,0 +1,41 @@
+R-14.8 Repeat Exercise R-14.7 for the adjacency list representation, as described in the
+chapter.
+
+
+Answer:
+======
+
+An adjacency list, for instance:
+
+V (vertices)
+ ___
+|   |
+| *-|--> A
+|   |
+| *-|--> B
+|   |
+| *-|--> C
+|   |
+| *-|--> D
+|___|
+
+Pseudo-code:
+
+insertEdge(A, B, edge) 
+    list.getVertex(A).add(edge)
+    list.getVertex(B).add(edge)
+
+
+The adjacency list after insertion (e = edge):
+
+V (vertices)
+ ___
+|   |
+| *-|--> A --> e
+|   |
+| *-|--> B --> e
+|   |
+| *-|--> C
+|   |
+| *-|--> D
+|___|
