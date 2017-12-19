@@ -38,7 +38,7 @@ Result:
  /
 2
 
-- 5th sequence insertion: {2, 3, 1}
+- 6th sequence insertion: {2, 3, 1}
 Result (identical to the 2nd):
   2
  / \
