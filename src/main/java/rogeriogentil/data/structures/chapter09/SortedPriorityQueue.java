@@ -32,14 +32,14 @@ public class SortedPriorityQueue<K, V> extends AbstractPriorityQueue<K, V> {
       Position<Entry<K, V>> walk = list.last();
       
       while (walk != null && compare(newest, walk.getElement()) < 0) {
-         walk = list.before(walk);
+         walk = list.before(walk);}
          
          if (walk == null) {
             list.addFirst(newest);
          } else {
             list.addAfter(walk, newest);
          }
-      }
+      
       
       return newest;
    }
