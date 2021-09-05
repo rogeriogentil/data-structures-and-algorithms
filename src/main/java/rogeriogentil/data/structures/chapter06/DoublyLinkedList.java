@@ -88,8 +88,8 @@ public class DoublyLinkedList<E> implements Deque<E> {
       }
 
       E element = trailer.getPrevious().getElement();
-      trailer.setPrevious(trailer.getPrevious().getPrevious());
       trailer.getPrevious().getPrevious().setNext(trailer);
+      trailer.setPrevious(trailer.getPrevious().getPrevious());
       size--;
       return element;
    }
